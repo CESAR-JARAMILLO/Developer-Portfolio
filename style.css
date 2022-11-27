@@ -26,7 +26,7 @@ main {
   position: relative;
 }
 
-header {
+.main-header {
   position: absolute;
   width: 100%;
   margin-top: 20px;
@@ -35,18 +35,18 @@ header {
   align-items: center;
 }
 
-header .name {
+.main-header .name {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-header .social {
+.main-header .social {
   width: 174px;
   display: flex;
   justify-content: space-around;
 }
 
-header .social-icon {
+.main-header .social-icon {
   height: 20px;
   width: 20px;
 }
@@ -90,3 +90,60 @@ header .social-icon {
   margin-top: 2px;
 }
 
+.projects-section {
+  padding: 80px 16px;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.projects-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.projects-header p {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.project-card {
+  height: 343px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card-header img {
+  height: 253px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-languages {
+  display: flex;
+}
+
+.project-languages p {
+  margin-right: 18px;
+  font-size: 18px;
+  color: #d9d9d9;
+}
+
+.project-samples {
+  display: flex;
+}
+
+.project-samples p:nth-of-type(1) {
+  margin-right: 30px;
+}
