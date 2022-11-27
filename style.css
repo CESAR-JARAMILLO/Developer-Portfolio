@@ -66,3 +66,27 @@ header .social-icon {
 .intro p:nth-of-type(1) {
   margin: 24px 0;
 }
+
+/* .intro p:nth-of-type(2) {
+  margin-bottom: 40px;
+} */
+
+.experience-section {
+  height: 604px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.language {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.experience {
+  font-size: 16px;
+  color: #d9d9d9;
+  margin-top: 2px;
+}
+
