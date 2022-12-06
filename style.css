@@ -32,6 +32,19 @@ main {
   position: relative;
 }
 
+main .circle {
+  position: absolute;
+  right: -64.5px;
+  bottom: 44%;
+}
+
+main .rings {
+  position: absolute;
+  left: -310px;
+  top: 124px;
+  z-index: -1;
+}
+
 .main-header {
   position: absolute;
   width: 100%;
@@ -83,6 +96,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.experience-section .rings {
+  position: absolute;
+  bottom: -64.5px;
+  right: -340px;
 }
 
 .language {
@@ -181,6 +201,13 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 327px;
+  position: relative;
+}
+
+form .rings {
+  position: absolute;
+  bottom: 0;
+  left: -340px;
 }
 
 form input,
