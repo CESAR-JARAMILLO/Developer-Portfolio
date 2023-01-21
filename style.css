@@ -261,7 +261,7 @@ footer hr {
 }
 
 footer .main-header {
-  position: relative;
+  /* position: relative; */
 }
 
 @media (min-width: 768px) {
@@ -287,6 +287,21 @@ footer .main-header {
   .social {
     margin: 0;
   }
+  
+  main
+  .img-top
+  .social
+  .social-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  main
+  .img-top
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+  }
 
   main
   .right-container {
@@ -305,7 +320,6 @@ footer .main-header {
     text-align: left;
     padding: 0;
     padding-left: 32px;
-    /* overflow-x: visible; */
   }
 
   main
@@ -357,5 +371,50 @@ footer .main-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
+  }
+
+  .contact-footer > * {
+    margin: 0 162px;
+  }
+
+  .contact-footer
+  h2 {
+    font-size: 72px;
+  }
+  
+  .contact-footer
+  p {
+    font-size: 18px;
+  }
+
+  .contact-footer
+  .main-header {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-footer
+  .main-header
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .contact-footer
+  .main-header
+  .social {
+    width: 174px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact-footer
+  .main-header
+  .social
+  .social-icon {
+    height: 24px;
+    width: 24px;
   }
 }
