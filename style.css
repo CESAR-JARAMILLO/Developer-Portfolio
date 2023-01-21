@@ -61,7 +61,7 @@ main
 .img-top {
   position: absolute;
   top: 20px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 main .name {
@@ -73,6 +73,7 @@ main .social {
   width: 174px;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 main .social-icon {
@@ -279,6 +280,12 @@ footer .main-header {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+  }
+
+  main
+  .img-top
+  .social {
+    margin: 0;
   }
 
   main
