@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   background-color: #151515;
   display: flex;
   flex-direction: column;
@@ -30,12 +31,14 @@ hr {
 
 main {
   position: relative;
+  overflow: hidden;
 }
 
 main .circle {
   position: absolute;
   right: -64.5px;
   bottom: 44%;
+  z-index: -1;
 }
 
 main .rings {
@@ -97,12 +100,21 @@ main .rings {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
 
-.experience-section .rings {
+/* .img-container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+} */
+
+.experience-section
+.rings {
   position: absolute;
   bottom: -64.5px;
   right: -340px;
+  z-index: 12;
 }
 
 .language {
