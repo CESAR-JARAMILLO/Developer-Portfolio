@@ -331,4 +331,25 @@ footer .main-header {
   .circle {
     bottom: 0;
   }
+
+  hr {
+    width: 708px;
+  }
+
+  .experience-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+    text-align: left;
+  }
+
+  .experience-section
+  .language {
+    font-size: 48px;
+  }
+
+  .experience-section
+  .experience {
+    font-size: 18px;
+  }
 }
