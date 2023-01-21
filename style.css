@@ -64,12 +64,14 @@ main
   width: 100%;
 }
 
-main .name {
+main .name,
+footer .main-header .name {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-main .social {
+main .social,
+footer .social {
   width: 174px;
   display: flex;
   justify-content: space-around;
@@ -408,6 +410,7 @@ footer .main-header {
     width: 174px;
     display: flex;
     justify-content: space-around;
+    margin-right: 0;
   }
 
   .contact-footer
