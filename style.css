@@ -352,4 +352,10 @@ footer .main-header {
   .experience {
     font-size: 18px;
   }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
 }
