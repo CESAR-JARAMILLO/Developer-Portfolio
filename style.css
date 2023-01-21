@@ -32,13 +32,14 @@ hr {
 main {
   position: relative;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 
 main .circle {
   position: absolute;
   right: -64.5px;
   bottom: 44%;
-  z-index: -1;
+  z-index: 1;
 }
 
 main .rings {
@@ -48,27 +49,33 @@ main .rings {
   z-index: -1;
 }
 
-.main-header {
-  position: absolute;
+.right-container {
+  position: relative;
   width: 100%;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.main-header .name {
+main
+.img-top {
+  position: absolute;
+  top: 20px;
+  margin: 0 auto;
+}
+
+main .name {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.main-header .social {
+main .social {
   width: 174px;
   display: flex;
   justify-content: space-around;
 }
 
-.main-header .social-icon {
+main .social-icon {
   height: 20px;
   width: 20px;
 }
@@ -102,12 +109,6 @@ main .rings {
   position: relative;
   overflow: hidden;
 }
-
-/* .img-container {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-} */
 
 .experience-section
 .rings {
@@ -260,4 +261,67 @@ footer hr {
 
 footer .main-header {
   position: relative;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+  }
+
+  main
+  .img-top {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  main
+  .right-container {
+    width: 40%;
+  }
+
+  main
+  .right-container
+  .adam-img {
+    height: 600px;
+  }
+
+  main
+  .intro {
+    position: absolute;
+    text-align: left;
+    padding: 0;
+    padding-left: 32px;
+    /* overflow-x: visible; */
+  }
+
+  main
+  .intro
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 150px;
+    width: 65%;
+  }
+
+  main
+  .intro
+  .about {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 60px;
+  }
+
+  main
+  .circle {
+    bottom: 0;
+  }
 }
