@@ -421,3 +421,42 @@ footer .main-header {
     width: 24px;
   }
 }
+
+@media (min-width: 1440px) {
+  body > *,
+  body .experience-section {
+    margin: 0 165px;
+  }
+
+  main
+  .right-container
+  .adam-img {
+    height: 720px;
+  }
+
+  main
+  .intro
+  h1 {
+    font-size: 88px;
+    width: 75%;
+  }
+
+  hr {
+    margin: 104px 0 0 0;
+    width: 1010px;
+  }
+
+  hr:nth-of-type(2) {
+    display: none;
+  }
+
+  .experience-section {
+    grid-template-columns: repeat(3, 1fr);
+    height: 328px;
+  }
+
+  /* .experience-section
+  .experience-container {
+    height: min-content;
+  } */
+}
