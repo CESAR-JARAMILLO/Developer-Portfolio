@@ -26,7 +26,7 @@ p {
 hr {
   border: 1px solid #fff;
   width: 343px;
-  margin: 0 auto;
+  align-self: center;
 }
 
 .underline {
@@ -36,7 +36,7 @@ hr {
 main {
   position: relative;
   overflow: hidden;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 main .circle {
@@ -372,6 +372,10 @@ form a {
     width: 708px;
   }
 
+  hr.first {
+    margin-top: 60px;
+  }
+
   .experience-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -483,7 +487,7 @@ form a {
   }
 
   hr {
-    margin: 104px 0 0 0;
+    /* margin: 104px 0 0 0; */
     width: 1010px;
   }
 
