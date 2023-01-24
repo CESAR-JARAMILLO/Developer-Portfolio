@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,37 @@ body > * {
   fill: green;
 }
 
+.circle {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 16rem;
+  right: -6.8rem;
+  z-index: 1;
+}
+
+.rings {
+  position: absolute;
+  height: 130px;
+  width: 530px;
+}
+
+.top-rings {
+  top: 8rem;
+  left: -21rem;
+}
+
+.mid-rings {
+  top: 76rem;
+  right: -21rem;
+}
+
+.bottom-rings {
+  position: absolute;
+  bottom: 16rem;
+  left: -25rem;
+}
+
 p {
   font-size: 16px;
 }
@@ -43,20 +75,6 @@ main {
   position: relative;
   overflow: hidden;
   /* margin-bottom: 60px; */
-}
-
-main .circle {
-  position: absolute;
-  right: -64.5px;
-  bottom: 44%;
-  z-index: 1;
-}
-
-main .rings {
-  position: absolute;
-  left: -310px;
-  top: 124px;
-  z-index: -1;
 }
 
 .right-container {
@@ -116,14 +134,6 @@ footer .social {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-}
-
-.experience-section
-.rings {
-  position: absolute;
-  bottom: -64.5px;
-  right: -340px;
-  z-index: 12;
 }
 
 .language {
@@ -239,12 +249,6 @@ footer .social {
   margin: 0 16px;
 }
 
-form .rings {
-  position: absolute;
-  bottom: 0;
-  left: -340px;
-}
-
 form input,
 form textarea {
   width: 343px;
@@ -286,6 +290,19 @@ form a {
   body > *,
   body > .projects-section {
     margin: 0 30px;
+  }
+
+  .circle {
+    top: 30rem;
+  }
+
+  .mid-rings {
+    top: 68rem;
+  }
+
+  .bottom-rings {
+    left: -28rem;
+    bottom: 10rem;
   }
 
   main {
@@ -364,13 +381,13 @@ form a {
     margin-top: 60px;
   }
 
-  main
-  .circle {
-    bottom: 0;
-  }
 
   hr.first {
     margin-top: 60px;
+  }
+
+  hr:nth-of-type(2) {
+    display: none;
   }
 
   .experience-section {
@@ -470,6 +487,15 @@ form a {
     margin: 0 165px;
   }
 
+  .circle {
+    right: 20rem;
+  }
+
+  .mid-rings {
+    top: 60rem;
+    right: -28rem;
+  }
+
   main
   .right-container
   .adam-img {
@@ -481,10 +507,6 @@ form a {
   h1 {
     font-size: 88px;
     width: 75%;
-  }
-
-  hr:nth-of-type(2) {
-    display: none;
   }
 
   .experience-section {
