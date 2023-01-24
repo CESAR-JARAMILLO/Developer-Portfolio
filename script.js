@@ -7,36 +7,46 @@ const emailError = document.querySelector("#email-error");
 const messageInput = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 
-submitBtn.addEventListener("click", e => {
-  e.preventDefault();
+// Add blur event listeners to input fields
+nameInput.addEventListener("blur", validateName);
+emailInput.addEventListener("blur", validateEmail);
+messageInput.addEventListener("blur", validateMessage);
 
- // Check if name input is not empty
- if (nameInput.value === "") {
-  nameError.textContent = "Name is required";
-  return;
-} else {
-  nameError.textContent = "";
+// Validate name input
+function validateName() {
+  if (nameInput.value === "") {
+    nameError.textContent = "Name is required";
+    nameInput.classList.add("invalid");
+  } else {
+    nameError.textContent = "";
+    nameInput.classList.remove("invalid");
+    nameInput.classList.add("valid");
+  }
 }
 
-// Check if email input is valid
-if (!isValidEmail(emailInput.value)) {
-  emailError.textContent = "Please enter a valid email address";
-  return;
-} else {
-  emailError.textContent = "";
+// Validate email input
+function validateEmail() {
+  if (!isValidEmail(emailInput.value)) {
+    emailError.textContent = "Please enter a valid email address";
+    emailInput.classList.add("invalid");
+  } else {
+    emailError.textContent = "";
+    emailInput.classList.remove("invalid");
+    emailInput.classList.add("valid");
+  }
 }
 
-// Check if message input is not empty
-if (messageInput.value === "") {
-  messageError.textContent = "Please enter a message";
-  return;
-} else {
-  messageError.textContent = "";
+// Validate message input
+function validateMessage() {
+  if (messageInput.value === "") {
+    messageError.textContent = "Please enter a message";
+    messageInput.classList.add("invalid");
+  } else {
+    messageError.textContent = "";
+    messageInput.classList.remove("invalid");
+    messageInput.classList.add("valid");
+  }
 }
-
-// If all input fields are valid, submit the form
-form.submit();
-});
 
 // Function to check if email is valid
 function isValidEmail(email) {

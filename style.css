@@ -288,6 +288,13 @@ footer .social {
   margin: 0 16px;
 }
 
+.valid{
+  border-bottom: 2px solid green;
+}
+.invalid{
+  border-bottom: 2px solid red;
+}
+
 form input,
 form textarea {
   width: 343px;
@@ -298,7 +305,12 @@ form textarea {
 
 form input {
   height: 43px;
-  margin-bottom: 32px;
+}
+
+form span {
+  margin-bottom: 10px;
+  text-align: right;
+  color: red;
 }
 
 form textarea {
