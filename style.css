@@ -184,8 +184,41 @@ footer .social {
   margin-bottom: 40px;
 }
 
+.card-header {
+  position: relative;
+}
+
 .card-header img {
   height: 253px;
+}
+
+.card-header
+.overlay {
+  position: absolute; /* this is needed for the overlay to be positioned correctly */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* this sets the background color of the overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden; /* this hides the overlay by default */
+}
+
+.card-header
+.overlay a {
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-decoration:underline green;
+}
+
+.card-header
+.overlay a:hover {
+  color: green;
 }
 
 .project-title {
@@ -523,6 +556,10 @@ form a {
   .projects-section
   .card-header {
     width: 100%;
+  }
+
+  .card-header:hover .overlay {
+    visibility: visible; /* this makes the overlay visible when the image is hovered over */
   }
 
   .projects-section
