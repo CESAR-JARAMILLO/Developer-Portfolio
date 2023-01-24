@@ -227,12 +227,14 @@
           fill in the form, and I’ll get back to you as soon as possible.</p>
       </div>
   
-      <form>
+      <form id="myForm">
         <input type="text" name="name" id="name" placeholder="NAME">
+        <span id="name-error" class="error"></span>
         <input type="email" name="email" id="email" placeholder="EMAIL">
+        <span id="email-error" class="error"></span>
         <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
-  
-        <a href="#" class="underline">send message</a>
+        <span id="message-error" class="error"></span>
+        <a href="#" id="submit-btn" class="underline">send message</a>
       </form>
     </div>
 
@@ -258,5 +260,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
