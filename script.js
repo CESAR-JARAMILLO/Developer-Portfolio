@@ -7,6 +7,15 @@ const emailError = document.querySelector("#email-error");
 const messageInput = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 
+submitBtn.addEventListener("click", e => {
+  e.preventDefault();
+
+  // check if all inputs are valid
+  if (nameInput.classList.contains("valid") && emailInput.classList.contains("valid") && messageInput.classList.contains("valid")) {
+      form.submit();
+  }
+});
+
 // Add blur event listeners to input fields
 nameInput.addEventListener("blur", validateName);
 emailInput.addEventListener("blur", validateEmail);
