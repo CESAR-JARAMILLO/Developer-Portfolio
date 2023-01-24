@@ -57,6 +57,12 @@ body > * {
   left: -25rem;
 }
 
+.contact {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 16px;
 }
