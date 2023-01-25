@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +11,7 @@
 }
 
 body {
+  font-family: 'SpaceGrotesk', sans-serif;
   position: relative;
   background-color: #151515;
   display: flex;
@@ -304,7 +310,7 @@ form textarea {
   color: #fff;
   font-size: 16px;
   padding: 2px 16px;
-  font-family: initial;
+  /* font-family: initial; */
   outline: none;
 }
 
@@ -320,11 +326,12 @@ form span {
 
 form textarea {
   height: 107px;
+  font-family: inherit;
 }
 
 ::placeholder {
   font-size: 16px;
-  font-family: initial;
+  /* font-family: initial; */
   color: #fff;
   opacity: 0.5;
 }
