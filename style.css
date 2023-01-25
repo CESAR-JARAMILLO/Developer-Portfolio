@@ -28,8 +28,8 @@ body > * {
 
 .on-hover:hover,
 .social-icon.on-hover:hover path {
-  color: green;
-  fill: green;
+  color: #4EE1A0;
+  fill: #4EE1A0;
 }
 
 .circle {
@@ -80,7 +80,7 @@ hr {
 }
 
 .underline {
-  text-decoration: underline green;
+  text-decoration: underline #4EE1A0;
 }
 
 main {
@@ -219,12 +219,12 @@ footer .social {
   font-size: 16px;
   margin: 20px 0;
   text-transform: uppercase;
-  text-decoration:underline green;
+  text-decoration:underline #4EE1A0;
 }
 
 .card-header
 .overlay a:hover {
-  color: green;
+  color: #4EE1A0;
 }
 
 .project-title {
@@ -295,10 +295,10 @@ footer .social {
 }
 
 .valid{
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #4EE1A0;
 }
 .invalid{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #FF6F5B;
 }
 
 form input,
@@ -321,7 +321,7 @@ form input {
 form span {
   margin: 2px 0 10px 0;
   text-align: right;
-  color: red;
+  color: #FF6F5B;
 }
 
 form textarea {
