@@ -6,6 +6,7 @@ const emailInput = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
 const messageInput = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
+const contactBtns = document.querySelectorAll(".contact")
 
 submitBtn.addEventListener("click", e => {
   e.preventDefault();
@@ -14,6 +15,14 @@ submitBtn.addEventListener("click", e => {
   if (nameInput.classList.contains("valid") && emailInput.classList.contains("valid") && messageInput.classList.contains("valid")) {
       form.submit();
   }
+});
+
+// Smoothly scroll to form
+contactBtns.forEach(btn => {
+  btn.addEventListener("click", e => {
+    e.preventDefault();
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 });
 
 // Add blur event listeners to input fields
