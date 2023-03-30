@@ -6,7 +6,7 @@ const Hero = () => {
     <Container>
       <Image src={cesar} />
       <Box>
-        <h1>Nice to meet you! I'm Cesar.</h1>
+        <h1>Nice to meet you! I'm Cesar</h1>
 
         <p>Based in Los Angeles, CA. I'm a full-stack developer passionate about building accessible web apps that users love.</p>
 
