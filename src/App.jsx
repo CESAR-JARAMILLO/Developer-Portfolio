@@ -1,12 +1,12 @@
-import Hero from './components/Hero'
+import { Box } from "@chakra-ui/react";
+import Hero from "./components/Hero";
 
 function App() {
-
   return (
-    <div className="App">
+    <Box bg="black">
       <Hero />
-    </div>
-  )
+    </Box>
+  );
 }
 
-export default App
+export default App;
