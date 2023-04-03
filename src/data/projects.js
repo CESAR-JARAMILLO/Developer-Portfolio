@@ -1,17 +1,25 @@
+import outdoorvibrations from "../assets/projects/outdoor-vibrations.png";
+import picksalot from "../assets/projects/picksalot.png";
+import dictionary from "../assets/projects/dictionary-api.jpg";
+import portfolio from "../assets/projects/developer-portfolio.jpg";
+
+
+
+
 export const projects = [
   {
     id: 1,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo quis nibh blandit semper. Mauris nec tortor est.",
-    image: "/images/project1.png",
-    link: "https://example.com/project1",
-    tags: ["React", "Node.js", "HTML", "CSS", "Database"]
+    title: "Outdoor Vibrations",
+    description: "An app for finding outdoor music events near you.",
+    image: outdoorvibrations,
+    link: "https://example.com/outdoorvibrations",
+    tags: ["React", "Node.js", "CSS", "MongoDB"]
   },
   {
     id: 2,
     title: "Project 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo quis nibh blandit semper. Mauris nec tortor est.",
-    image: "/images/project2.png",
+    image: picksalot,
     link: "https://example.com/project2",
     tags: ["React", "Node.js", "CSS"]
   },
@@ -19,7 +27,7 @@ export const projects = [
     id: 3,
     title: "Project 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo quis nibh blandit semper. Mauris nec tortor est.",
-    image: "/images/project3.png",
+    image: dictionary,
     link: "https://example.com/project3",
     tags: ["React", "Node.js", "HTML", "CSS"]
   },
@@ -27,7 +35,7 @@ export const projects = [
     id: 4,
     title: "Project 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget justo quis nibh blandit semper. Mauris nec tortor est.",
-    image: "/images/project4.png",
+    image: portfolio,
     link: "https://example.com/project4",
     tags: ["React", "Node.js", "HTML"]
   }
