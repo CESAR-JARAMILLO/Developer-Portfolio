@@ -4,15 +4,15 @@ const ProjectCard = ({ project }) => {
   const { title, description, image, link, tags } = project;
 
   return (
-    <Box bg="white" borderRadius="md" overflow="hidden" boxShadow="md">
+    <Box bg="#151515" color="white" borderRadius="md" overflow="hidden" boxShadow="md">
       <Image src={image} alt={title} />
 
-      <Box padding="4" textAlign="center">
+      <Box padding="4" textAlign="left">
         <Heading as="h3" size="md">{title}</Heading>
-        <Text>{description}</Text>
-        <Box mt="2" display="flex" justifyContent="center">
+        <Text mt={2} mb={2}>{description}</Text>
+        <Box mt="2" display="flex" justifyContent="flex-start">
           {tags.map(tag => (
-            <Tag key={tag} size="md" borderRadius="full" variant="solid" colorScheme="purple" mr="2">
+            <Tag key={tag} size="md" borderRadius="full" variant="solid" colorScheme="green" mr="2">
               <TagLabel>{tag}</TagLabel>
             </Tag>
           ))}
