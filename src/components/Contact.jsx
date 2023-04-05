@@ -31,15 +31,19 @@ const Contact = () => {
   return (
     <Box bg="gray.800" color="white" py={12}>
       <Container>
-        <Heading mb={4}>Get In Touch</Heading>
-        <Text mb={8}>
+        <Heading textAlign="center" mb={4}>Get In Touch</Heading>
+        <Text textAlign="center" mb={8} mr={{ base: 0, md: 4 }}>
           If you want to talk to me about a project, or if you have a question,
           feel free to fill out the form below and I'll get back to you as soon
           as possible.
         </Text>
-        <form onSubmit={handleSubmit}>
-          <Flex direction={{ base: "column", md: "row" }} alignItems="center">
-            <Box mr={{ base: 0, md: 4 }} mb={{ base: 4, md: 0 }} width={width}>
+        <Flex justifyContent="center" alignItems="center">        
+          <form onSubmit={handleSubmit}>
+            <Box
+              mr={{ base: 0, md: 4 }}
+              mb={{ base: 4, md: 0 }}
+              width="%100"
+            >
               <Input
                 type="text"
                 placeholder="Name"
@@ -76,16 +80,19 @@ const Contact = () => {
                 _placeholder={{ color: "gray.400" }}
               />
             </Box>
-            <IconButton
-              type="submit"
-              icon={<AiOutlineSend />}
-              aria-label="Send message"
-              bg="white"
-              color="gray.800"
-              size="lg"
-            />
-          </Flex>
-        </form>
+            <Box width="%100">
+              <IconButton
+                type="submit"
+                icon={<AiOutlineSend />}
+                aria-label="Send message"
+                bg="white"
+                color="gray.800"
+                size="lg"
+                width="100%"
+              />
+            </Box>
+          </form>
+        </Flex>
       </Container>
     </Box>
   );
