@@ -15,7 +15,7 @@ import { AiOutlineSend } from "react-icons/ai";
 
 const Contact = () => {
   const toast = useToast();
-  const width = useBreakpointValue({ base: "90%", md: "400px" });
+  const width = useBreakpointValue({ base: "100%", md: "400px" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const Contact = () => {
             <Box
               mr={{ base: 0, md: 4 }}
               mb={{ base: 4, md: 0 }}
-              width="%100"
+              width={width}
             >
               <Input
                 type="text"
@@ -88,7 +88,7 @@ const Contact = () => {
                 bg="white"
                 color="gray.800"
                 size="lg"
-                width="100%"
+                width={width}
               />
             </Box>
           </form>
