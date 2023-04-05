@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
   const { title, description, image, link, tags } = project;
 
   return (
-    <Box bg="#151515" color="white" borderRadius="md" overflow="hidden" boxShadow="md">
+    <Box bg="gray.800" color="white" borderRadius="md" overflow="hidden" boxShadow="md">
       <Image src={image} alt={title} />
 
       <Box padding="4" textAlign="left">
