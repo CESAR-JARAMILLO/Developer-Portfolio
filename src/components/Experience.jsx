@@ -4,7 +4,7 @@ import ExperienceBox from './ExperienceBox'
 const Experience = () => {
   return (
     <Container maxW="container.md">
-      <Heading textAlign="center" color="white" mb={4}>My Experience</Heading>
+      <Heading textAlign="center" color="white" mb={4} mt={8}>My Experience</Heading>
       <Stack paddingY="8" spacing="4" align="center">
         <Grid
           templateColumns={{
