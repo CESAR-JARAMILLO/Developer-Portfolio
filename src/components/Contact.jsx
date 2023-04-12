@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for contacting me. I'll get back to you soon!",
+      description: "Thank you for contacting me. I'll get back to you as soon as I can!",
       status: "success",
       duration: 5000,
       isClosable: true,
