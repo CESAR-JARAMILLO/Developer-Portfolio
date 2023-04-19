@@ -33,8 +33,7 @@ const Contact = () => {
       <Container>
         <Heading textAlign="center" mb={4}>Get In Touch</Heading>
         <Text textAlign="center" mb={8} mr={{ base: 0, md: 4 }}>
-          If you want to talk to me about a project, or if you have a question,
-          feel free to fill out the form below and I'll get back to you as soon
+          If you want to talk to me about a project, or if you have a question,fill out the form below and I'll get back to you as soon
           as possible.
         </Text>
         <Flex justifyContent="center" alignItems="center">        
